@@ -11,9 +11,3 @@ io.on("connection", function(socket) {
         io.sockets.emit('message-re', data)
     })
 });
-app.set('view engine', 'ejs');
-app.set("views", "./views");
-app.listen(process.env.PORT || 8080);
-app.get("/host", function(req, res) {
-    res.render("home");
-})

@@ -4,16 +4,16 @@ const server = require("http").Server(app);
 const io = require("socket.io")(server);
 server.listen(process.env.PORT || 3000);
 
-io.on("connection", (socket) => {
+io.on("connection", function(socket) {
     console.log('Co Nguoi Ket noi:' + socket.id)
     socket.on('message', (data) => {
-        console.log('Message from Client:'+data)
-         io.sockets.emit('message-re', data)
+        console.log('Message from Client:' + data)
+        io.sockets.emit('message-re', data)
     })
 });
-app.set('view engine','ejs');
-app.set("views","./views");
+app.set('view engine', 'ejs');
+app.set("views", "./views");
 app.listen(process.env.PORT || 8080);
-app.get("/host",(req,res)=>{
+app.get("/host", (req, res) => {
     res.render("home");
 })

@@ -9,6 +9,5 @@ io.on("connection", function(socket) {
     socket.on('message', function(data) {
         console.log('Message from Client:' + data)
         io.sockets.emit('message-re', data)
-        io.sockets.emit('count-client', socketIO.engine.clientsCount)
     })
 });

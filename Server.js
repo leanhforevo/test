@@ -14,6 +14,6 @@ io.on("connection", function(socket) {
 app.set('view engine', 'ejs');
 app.set("views", "./views");
 app.listen(process.env.PORT || 8080);
-app.get("/host", (req, res) => {
+app.get("/host", function(req, res) {
     res.render("home");
 })

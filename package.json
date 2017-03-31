@@ -3,9 +3,17 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+   "dependencies": {
+    "express": "*",
+    "socket.io": "*"
   },
-  "author": "",
+  "devDependencies": {},
+  "scripts": {
+    "start": "node Server.js"
+  },
+  "engines": {
+      "node": "0.10.31"
+  },
+  "author": "Joseph Esteban",
   "license": "ISC"
 }

@@ -13,7 +13,7 @@ const io = require("socket.io")(server);
 // });
 app.set('view engine','ejs');
 app.set("views","./views");
-app.listen(3000);
+app.listen(process.env.PORT || 3000);
 app.get("/",(req,res)=>{
     res.render("home");
 })

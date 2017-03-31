@@ -11,9 +11,9 @@ io.on("connection", (socket) => {
          io.sockets.emit('message-re', data)
     })
 });
-// app.set('view engine','ejs');
-// app.set("views","./views");
-// app.listen(process.env.PORT || 8080);
-// app.get("/host",(req,res)=>{
-//     res.render("home");
-// })
+app.set('view engine','ejs');
+app.set("views","./views");
+app.listen(process.env.PORT || 8080);
+app.get("/host",(req,res)=>{
+    res.render("home");
+})

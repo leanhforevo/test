@@ -1,6 +1,6 @@
 var express = require('express');
 var app = express();
-var server = require('http').createServer(app);
+var server = require('https').createServer(app);
 var Nightmare = require('nightmare');
 var nightmare = Nightmare();
 var osmosis = require('osmosis');

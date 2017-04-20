@@ -5,7 +5,8 @@
   "main": "index.js",
    "dependencies": {
     "express": "*",
-    "socket.io": "*"
+    "nightmare": "^2.10.0",
+    "osmosis": "^1.1.4"
   },
   "devDependencies": {},
   "scripts": {

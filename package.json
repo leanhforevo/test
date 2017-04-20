@@ -5,8 +5,8 @@
   "main": "index.js",
    "dependencies": {
     "express": "*",
-    "nightmare": "^2.10.0",
-    "osmosis": "^1.1.4"
+    "nightmare": "*",
+    "osmosis": "*"
   },
   "devDependencies": {},
   "scripts": {

@@ -1,7 +1,9 @@
 const express = require("express");
 const app = express();
 const server = require("http").Server(app);
-const io = require("socket.io")(server);
+var Nightmare = require('nightmare');
+var nightmare = Nightmare();
+var osmosis = require('osmosis');
 server.listen(process.env.PORT || 3000);
 
 app.get('/', function (req, res) {
